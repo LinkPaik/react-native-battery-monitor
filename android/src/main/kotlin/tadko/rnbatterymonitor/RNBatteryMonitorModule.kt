@@ -31,12 +31,12 @@ class RNBatteryMonitorModule(var reactContext: ReactApplicationContext) : ReactC
     
     
     @ReactMethod
-    fun addListener(eventName: String): void {
+    fun addListener(eventName: String) {
         // Keep: Required for RN built in Event Emitter Calls.
     }
 
     @ReactMethod
-    fun removeListeners(count: Integer): void {
+    fun removeListeners(count: Integer) {
         // Keep: Required for RN built in Event Emitter Calls.
     }
 }
