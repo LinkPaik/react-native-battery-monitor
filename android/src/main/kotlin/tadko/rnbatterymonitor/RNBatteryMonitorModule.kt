@@ -29,4 +29,14 @@ class RNBatteryMonitorModule(var reactContext: ReactApplicationContext) : ReactC
         batteryMonitor.getBatteryState(promise)
     }
     
+    
+    @ReactMethod
+    fun addListener(eventName: String): void {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
+
+    @ReactMethod
+    fun removeListeners(count: Integer): void {
+        // Keep: Required for RN built in Event Emitter Calls.
+    }
 }
